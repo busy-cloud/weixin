@@ -1,0 +1,65 @@
+{
+  "name": "wechat_user",
+  "comment": "微信用户",
+  "columns": [
+    {
+      "name": "id",
+      "comment": "用户ID",
+      "type": "string",
+      "length": 50,
+      "primary": true
+    },
+    {
+      "name": "openid",
+      "comment": "微信OpenID",
+      "type": "string",
+      "length": 64,
+      "unique": true,
+      "index": true
+    },
+    {
+      "name": "unionid",
+      "comment": "微信UnionID",
+      "type": "string",
+      "length": 64,
+      "index": true
+    },
+    {
+      "name": "name",
+      "comment": "用户名",
+      "type": "string",
+      "length": 50
+    },
+    {
+      "name": "avatar",
+      "comment": "头像",
+      "type": "string",
+      "length": 256
+    },
+    {
+      "name": "cellphone",
+      "comment": "手机号",
+      "type": "string",
+      "length": 32
+    },
+    {
+      "name": "disabled",
+      "comment": "禁用",
+      "type": "bool",
+      "default": "false"
+    },
+    {
+      "name": "created",
+      "comment": "创建时间",
+      "type": "datetime",
+      "created": true
+    },
+    {
+      "name": "updated",
+      "comment": "更新时间",
+      "type": "datetime",
+      "updated": true
+    }
+  ]
+}
+
