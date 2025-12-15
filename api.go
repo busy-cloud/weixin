@@ -7,6 +7,7 @@ import (
 	"github.com/busy-cloud/boat/db"
 	"github.com/busy-cloud/boat/web"
 	"github.com/gin-gonic/gin"
+	"github.com/rs/xid"
 )
 
 func init() {
@@ -39,6 +40,9 @@ func code2session(ctx *gin.Context) {
 	}
 
 	if !has {
+		//user.Id = "wx_" + resp.OpenID
+		user.Id = xid.New().String()
+		user.Name = "微信用户"
 		user.OpenId = resp.OpenID
 		user.UnionId = resp.UnionID
 		_, err = db.Engine().Insert(&user)
