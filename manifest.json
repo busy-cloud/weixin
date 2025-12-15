@@ -1,0 +1,14 @@
+{
+  "id": "weixin",
+  "icon": "weixin.png",
+  "name": "微信插件",
+  "description": "微信插件",
+  "version": "v0.0.1",
+  "shortcuts": [
+  ],
+  "menus": [
+  ],
+  "assets": "assets",
+  "pages": "pages",
+  "tables": "tables"
+}
