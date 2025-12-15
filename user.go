@@ -12,8 +12,8 @@ import (
 
 type User struct {
 	Id        string    `json:"id" xorm:"pk"`
-	OpenId    string    `json:"openid,omitempty" xorm:"index"`
-	UnionId   string    `json:"unionid,omitempty" xorm:"index"`
+	OpenId    string    `json:"openid,omitempty" xorm:"'openid'"`
+	UnionId   string    `json:"unionid,omitempty" xorm:"'unionid'"`
 	Name      string    `json:"name,omitempty"`
 	Avatar    string    `json:"avatar,omitempty"`
 	Cellphone string    `json:"cellphone,omitempty"`
