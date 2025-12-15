@@ -5,7 +5,6 @@ go 1.24.7
 require (
 	github.com/ArtisanCloud/PowerWeChat/v3 v3.4.29
 	github.com/busy-cloud/boat v0.7.2
-	github.com/busy-cloud/user v0.6.5
 	github.com/gin-gonic/gin v1.10.1
 	github.com/spf13/viper v1.20.1
 )
