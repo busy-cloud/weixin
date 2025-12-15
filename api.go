@@ -14,7 +14,7 @@ func init() {
 }
 
 func code2session(ctx *gin.Context) {
-	code := ctx.Param("code")
+	code := ctx.Query("code")
 	if code == "" {
 		api.Fail(ctx, "缺少code")
 		return
